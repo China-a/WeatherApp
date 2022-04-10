@@ -10,35 +10,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+<div class="border">
  <div class="weatherContainer">
     <h1>My Weather App</h1>
     <p>Welcome to the making of my first Weather App!</p>
     <section>
         <div>
     <form class="zip" >
-    <input type="text" placeholder="Please Enter Zip Code">
-    <button class="zipButton" >Enter</button>
+    <input type="text" id="input" placeholder="Please Enter Zip Code" >
+    <button id="zipButton" >Enter</button>
     </form>
     </section>
-    <section>
+    <section class="loading">
      <p class="currentDate">
-        Friday
     </p>
     <p class="zipCodeCity">
-    Charlotte
     </p>
     <div class="currentConditions">
     <!-- <img src ="https://openweathermap.org/img/wn/" id="icon"> -->
-    Sunny
+
     </div>
     <p class="temperature">
-    61 degrees
     </p>
     <p class="tempHiLow">
-    63 degrees / 41 degrees
     </p>
     </section>
-</div> 
-<script src="weatherApp.js"></script>
+</div>
+</div>
+<script src="weatherApp.js" defer></script>
 </body>
 </html>

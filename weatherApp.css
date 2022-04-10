@@ -12,20 +12,49 @@ body {
 h1 {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    width: 375px;
+    justify-content: center;
+    padding-left: 150px;
+    width: px;
     
 }
 .weatherContainer{
-    display: flex;
-    flex-direction: column;
-    margin-top: -260px;
-    background: whitesmoke;
-    opacity: 0.6;
-    border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     
+}
+
+.border {
+    width: 600px;
+    height: auto;
+    border: 150px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    opacity: 0.8;
+    margin-top: -250px ;
 }
 
 .zip {
  display: flex;
  justify-content: center;
 }
+
+
+#input {
+    width: 250px ;
+    padding: 5px;
+    border-radius: 25px;
+}
+ #zipButton {
+    margin: 3px;
+     width: 75px;
+     border-radius: 25px;
+ }
+ p {
+     display: flex;
+     flex-direction: column;
+   margin-left: 150px;
+ }
+  div.currentConditions {
+      margin-left: 150px;
+  }
