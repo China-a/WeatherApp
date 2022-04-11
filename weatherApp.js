@@ -12,7 +12,7 @@ let weather = {
     let date = document.querySelector('.currentDate');
     date.innerText = dateMaker(now);
         let { name } = data;
-        let { description } = data.weather;
+        let { description } = data.weather[0];
         let { temp }  = data.main;
         let {temp_max, temp_min} = data.main;
         document.querySelector(".zipCodeCity").innerHTML = "Weather in " + name;
@@ -22,7 +22,7 @@ let weather = {
     return this.displayweather
     },
 search: function() {
-    this.getweather(document.querySelector("#zipButton").value)
+    this.getweather(document.querySelector("#input").value)
         }
         
 };
