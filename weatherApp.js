@@ -12,13 +12,14 @@ let weather = {
     let date = document.querySelector('.currentDate');
     date.innerText = dateMaker(now);
         let { name } = data;
-        let { description } = data.weather[0];
+        let { icon, description } = data.weather[0];
         let { temp }  = data.main;
         let {temp_max, temp_min} = data.main;
         document.querySelector(".zipCodeCity").innerHTML = "Weather in " + name;
+        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".currentConditions").innerHTML = "What's it's like today: " + description;
-        document.querySelector(".temperature").innerHTML = "Temperature: " + temp + " &#x2109";
-        document.querySelector(".tempHiLow").innerHTML = "High: " + temp_max + " &#x2109" + " / Low: " + temp_min + " &#x2109";
+        document.querySelector(".temperature").innerHTML = "Temperature: " + Math.round(temp) + " &#x2109";
+        document.querySelector(".tempHiLow").innerHTML = "High: " + Math.round(temp_max) + " &#x2109" + " / Low: " + Math.round(temp_min)+ " &#x2109";
     return this.displayweather
     },
 search: function() {

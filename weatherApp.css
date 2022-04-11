@@ -34,6 +34,7 @@ h1 {
     margin-top: -250px ;
 }
 
+
 .zip {
  display: flex;
  justify-content: center;
@@ -41,7 +42,7 @@ h1 {
 
 
 #input {
-    width: 250px ;
+    width: 300px ;
     padding: 5px;
     border-radius: 25px;
 }
@@ -51,10 +52,19 @@ h1 {
      border-radius: 25px;
  }
  p {
-     display: flex;
-     flex-direction: column;
-   margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+   margin-left: 75px;
+   font-size: larger;
  }
   div.currentConditions {
-      margin-left: 150px;
+      margin-left: 75px;
+      font-size: larger;
+  }
+
+  .icon {
+    background-color: black;
+    padding: 0px;
+    border-radius: 25px;
+    margin-left: 200px;
   }
