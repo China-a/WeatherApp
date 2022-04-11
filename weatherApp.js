@@ -2,7 +2,7 @@ let weather = {
     "apikey": "650a8878e347137c39f66ce8c8cbdfab",
     "baseurl" : "https://api.openweathermap.org/data/2.5/weather?",
     getweather: function (zipCode) { 
-        fetch( this.baseurl + "zip=" + zipCode +",us&units=imperial&appid="+this.apikey)
+        fetch( this.baseurl + "zip="+zipCode+",us&units=imperial&appid="+this.apikey)
         .then((response) => response.json())
         .then((data) => this.displayweather(data));
     },
@@ -37,18 +37,10 @@ function dateMaker (currentDate) {
   
     return day +" " + number + " " + month + " " + year;
   }
-window.onload = () => {
+
 document.querySelector("#zipButton").addEventListener("click", function(e) {
   weather.search();
   e.preventDefault()
 })
-}
+
 weather.getweather("10011")
-
-
-
-// if(!response.ok) {
-//     alert("Error");
-//     throw new Error("Error")
-// }
-// return response.json();
